@@ -1,0 +1,428 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 10px;
+  }
+  
+  .logo {
+    border: 1px solid black;
+    width: 140px;
+    height: 35px;
+    background-color: #37bcf9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+   
+  }
+  .logo:hover #tituloLogo {
+   
+   
+    animation:moverTitulo 300ms  linear;
+  
+  }
+  .logo:hover  {
+  overflow:hidden;
+  background-color: green; 
+  font-style: italic; 
+  color: #fff; 
+  }
+
+  @keyframes moverTitulo{
+    from {
+      transform: translateX(120%);
+    }
+    to {
+      transform:translateX(0%);
+    }
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-right: 30%;
+  
+    
+  }
+  
+  
+  
+  .nav-links li {
+    margin-left: 40px;
+    
+    
+  }
+  
+ 
+  
+  
+  .nav-links li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: font-size 0.3s;
+  }
+  .nav-links a:hover {
+    font-size: 18px;
+    color: #37bcf9;
+   
+  }
+  
+  
+
+  .con01 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainTitulo {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    width: auto;
+    height: 90px;
+  }
+  
+  .centrar {
+    /* border: 1px solid black; */
+    border: 10px solid white;
+    text-align: center;
+    max-width: 80%;
+    color: white;
+    background: linear-gradient(to left, rgb(0, 97, 160), #050505);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 20px;
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .titulo-responsive h1 {
+      font-size: 24px; 
+    }
+  }
+  
+  
+  .cursos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .tarjeta {
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00538c;
+    margin: 10px;
+    transition: all;
+    padding: 20px;
+  }
+  
+  .tarjeta:hover {
+  
+    background-color: #333;
+    color: white;
+    overflow:hidden;
+  
+  }
+
+ 
+  .tarjeta:hover #tarjetaTitulo
+  {
+    animation:cardTitulo 300ms  linear;
+  }
+  @keyframes cardTitulo{
+    from {
+      transform: translateY(-150%);
+    }
+    to {
+      transform:translateY(0%);
+    }
+  }
+  
+  .tarjeta:hover #tarjetaDescripcion
+  {
+    animation:cardDesc 300ms  linear;
+  }
+  @keyframes cardDesc{
+    from {
+      transform: translateX(-150%);
+    }
+    to {
+      transform:translateX(0%);
+    }
+  }
+  
+  .tarjeta h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .tarjeta p {
+    margin-top: 25px;
+    font-size: 14px;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  
+  .cuadro {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cuadro h2 {
+    font-size: 24px;
+  }
+  
+  .contenido {
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+  
+  
+  
+  .contenido img {
+    width: 300px;
+    height: 350px;
+  }
+  
+  .textoboton {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .textoboton h3 {
+    color: rgb(0, 37, 67);
+  }
+  
+  .textoboton a {
+    background-color: #333;
+    color:white;
+    display: flex;
+    align-items:baseline;
+    background-size: 4px 4px;
+    margin: 0;
+    flex-direction: column;
+    width: 80px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    border-radius: 20px;
+  }
+  
+  
+  #titulo {
+    background-color: #ddd;
+  
+    height: 50px;
+    align-items: center;
+    display: flex;
+    background-size: 4px 4px;
+    justify-content: center;
+
+  }
+  
+  
+  #titulo h2 {
+    font-size: 35px;
+    margin: 0;  
+    
+  }
+  
+  
+  .textodetalle {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+  }
+  
+  .textodetalle  p{
+    font-style: italic; 
+    color:rgb(0, 37, 67)
+  }
+  
+  footer {
+    background-color: #333;
+  }
+  #separadorFooter
+  {
+
+    
+  width: 50%;
+  background-color: white;
+  }
+  .imagenlogo {
+    background: linear-gradient(to left, rgb(0, 97, 160), #050505);
+    border: 1px solid black;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    width: 500px;
+  }
+  
+  
+  .lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .footertitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  @media (max-width: 350px) {
+  
+    .centrar {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      width: 50%;
+      height: auto;
+      align-content: center;
+      align-items: center;
+  
+    }
+  
+    .cursos {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+  
+  @media (max-width: 700px) {
+  
+    .centrar {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      width: 50%;
+      height: auto;
+      align-content: center;
+      align-items: center;
+    }
+  
+    
+  
+    .tarjeta {
+      display: flex;
+  
+    }
+    .cursos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+    }
+    #titulo {
+      width: 550px;
+      justify-content: center;
+    }
+  
+   
+  
+    .contenido {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .cuadrodetalle {
+      width: 50%;
+      height: auto;
+    }
+    .imagenlogo {
+      padding: 20px;
+      width: auto;
+      height: 50%;
+    }
+  
+  }
+  
+  .titulofooter,
+  .subtitulo {
+  
+    color: white;
+  
+  }
+  
+  .footerListTitle {
+  
+    list-style: none;
+   
+   text-align: center;
+    margin: 10px;
+    padding: 0;
+    margin-left: 40px;
+    margin-left: 0;
+    color: #fff;
+    font-size: 16px;
+    color:black;
+    background-color: #ccc;
+    border-radius: 20px;
+  
+  
+  
+  }
+  
+  .footer-link {
+  
+    text-decoration: none;
+  color:white;
+  
+  
+  }
+
+  th,td{
+    padding: 0px 100px;
+    
+  }
+  li{
+    margin-bottom: 25px;
+  }
